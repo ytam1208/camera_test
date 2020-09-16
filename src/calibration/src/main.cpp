@@ -2,12 +2,7 @@
 
 int main(int argc, char** argv)
 {
-	ros::init(argc, argv, "image_calibration");
-
-	ros::NodeHandle _nh;
-	calibration camera(_nh);
-
-	camera.runloop();
-	
+	calibration camera;
+		
 	return 0;
 }

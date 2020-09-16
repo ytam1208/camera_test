@@ -1,4 +1,4 @@
-prefix=/home/cona/catkin_ws/install
+prefix=/home/cona/camera_test/install
 
 Name: calibration
 Description: Description of calibration

@@ -3,8 +3,11 @@
         {
             "name": "Linux",
             "includePath": [
-                "/opt/ros/melodic/include",
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/opt/ros/kinetic/include/opencv-3.3.1-dev",
+                "/opt/ros/kinetic/include",
+                "/home/cona/camera_test/src/calibration/include/",
+                "/usr/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

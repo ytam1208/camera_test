@@ -67,14 +67,14 @@ set(usb_cam_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(usb_cam_SOURCE_PREFIX /home/cona/catkin_ws/src/usb_cam)
-  set(usb_cam_DEVEL_PREFIX /home/cona/catkin_ws/devel)
+  set(usb_cam_SOURCE_PREFIX /home/cona/camera_test/src/usb_cam)
+  set(usb_cam_DEVEL_PREFIX /home/cona/camera_test/devel)
   set(usb_cam_INSTALL_PREFIX "")
   set(usb_cam_PREFIX ${usb_cam_DEVEL_PREFIX})
 else()
   set(usb_cam_SOURCE_PREFIX "")
   set(usb_cam_DEVEL_PREFIX "")
-  set(usb_cam_INSTALL_PREFIX /home/cona/catkin_ws/install)
+  set(usb_cam_INSTALL_PREFIX /home/cona/camera_test/install)
   set(usb_cam_PREFIX ${usb_cam_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cona/catkin_ws/install/lib;/home/cona/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/cona/camera_test/install/lib;/home/cona/camera_test/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

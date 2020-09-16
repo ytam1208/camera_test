@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/melodic/lib:/usr/local/cuda-10.2/lib64'
-export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
-export PWD='/home/cona/catkin_ws/build'
-export PYTHONPATH='/opt/ros/melodic/lib/python2.7/dist-packages'
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
+export PATH="/opt/ros/kinetic/bin:/home/cona/bin:/home/cona/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
+export PWD="/home/cona/camera_test/build"
+export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages"

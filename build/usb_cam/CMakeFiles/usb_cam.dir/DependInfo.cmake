@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cona/catkin_ws/src/usb_cam/src/usb_cam.cpp" "/home/cona/catkin_ws/build/usb_cam/CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o"
+  "/home/cona/camera_test/src/usb_cam/src/usb_cam.cpp" "/home/cona/camera_test/build/usb_cam/CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,9 +17,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/cona/catkin_ws/src/usb_cam/include"
-  "/opt/ros/melodic/include"
-  "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/home/cona/camera_test/src/usb_cam/include"
+  "/opt/ros/kinetic/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/x86_64-linux-gnu"
   )
 

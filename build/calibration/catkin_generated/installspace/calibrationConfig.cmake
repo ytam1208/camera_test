@@ -67,14 +67,14 @@ set(calibration_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(calibration_SOURCE_PREFIX /home/cona/catkin_ws/src/calibration)
-  set(calibration_DEVEL_PREFIX /home/cona/catkin_ws/devel)
+  set(calibration_SOURCE_PREFIX /home/cona/camera_test/src/calibration)
+  set(calibration_DEVEL_PREFIX /home/cona/camera_test/devel)
   set(calibration_INSTALL_PREFIX "")
   set(calibration_PREFIX ${calibration_DEVEL_PREFIX})
 else()
   set(calibration_SOURCE_PREFIX "")
   set(calibration_DEVEL_PREFIX "")
-  set(calibration_INSTALL_PREFIX /home/cona/catkin_ws/install)
+  set(calibration_INSTALL_PREFIX /home/cona/camera_test/install)
   set(calibration_PREFIX ${calibration_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cona/catkin_ws/install/lib;/home/cona/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/cona/camera_test/install/lib;/home/cona/camera_test/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(calibration_EXPORTED_TARGETS "calibration_generate_messages_cpp;calibration_generate_messages_eus;calibration_generate_messages_lisp;calibration_generate_messages_nodejs;calibration_generate_messages_py")
+set(calibration_EXPORTED_TARGETS "")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${calibration_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND calibration_EXPORTED_TARGETS ${${calibration_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "calibration-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${calibration_DIR}/${extra})
