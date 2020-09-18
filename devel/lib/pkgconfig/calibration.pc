@@ -1,8 +1,0 @@
-prefix=/home/cona/camera_test/devel
-
-Name: calibration
-Description: Description of calibration
-Version: 0.0.0
-Cflags: -I/home/cona/camera_test/src/calibration/include
-Libs: -L${prefix}/lib 
-Requires: roscpp std_msgs message_runtime sensor_msgs

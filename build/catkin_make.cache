@@ -1,2 +1,0 @@
-calibration:usb_cam
--DCATKIN_DEVEL_PREFIX=/home/cona/camera_test/devel -DCMAKE_INSTALL_PREFIX=/home/cona/camera_test/install -G Unix Makefiles
